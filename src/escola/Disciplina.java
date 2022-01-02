@@ -1,23 +1,13 @@
 package escola;
 
-import java.util.ArrayList;
-import java.util.List;
+
 
 public class Disciplina {
 
 	private String disciplina;
 	private double nota;
 	
-	private List<Disciplina> disciplinas= new ArrayList<Disciplina>();
 	
-	public List<Disciplina> getDisciplinas() {
-		return disciplinas;
-	}
-	public void setDisciplinas(List<Disciplina> disciplinas) {
-		this.disciplinas = disciplinas;
-	
-	
-	}
 	public String getDisciplina() {
 		return disciplina;
 	}
@@ -29,6 +19,10 @@ public class Disciplina {
 	}
 	public void setNota(double nota) {
 		this.nota = nota;
+	}
+	@Override
+	public String toString() {
+		return "Disciplina [disciplina=" + disciplina + ", nota=" + nota + "]";
 	}
 	
 	
