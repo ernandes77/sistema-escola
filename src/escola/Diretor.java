@@ -30,5 +30,12 @@ public class Diretor extends Pessoa {
 				+ titulacao + "]";
 	}
 	
+	@Override
+	public boolean pessoaMaiorIdade() {
 	
+		return super.pessoaMaiorIdade();
+	}
+	public String msgMaiorIdade() {
+		return this.pessoaMaiorIdade() ? "Opa !!!voce e maior de idade " : "ix!!!voce e menor de idade ";
+	}
 }

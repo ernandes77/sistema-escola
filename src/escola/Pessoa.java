@@ -51,7 +51,11 @@ public class Pessoa {
 	public void setNomeMae(String nomeMae) {
 		this.nomeMae = nomeMae;
 	}
-	
-	
+	/*retorna verdadeiro ou falso*/
+	public boolean pessoaMaiorIdade() {
+		return idade >=18;
+		
+	}
+
 
 }

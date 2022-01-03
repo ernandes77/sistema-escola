@@ -103,5 +103,12 @@ public class Aluno extends Pessoa{
 				+ ", dataMatricula=" + dataMatricula + ", serieMatriculado=" + serieMatriculado + ", nomeEscola="
 				+ nomeEscola + ", disciplinas=" + disciplinas + "]";
 	}
-	
+	@Override/*indentifica metodo sobre escrito*/
+	public boolean pessoaMaiorIdade() {
+		
+		return super.pessoaMaiorIdade();
+	}/*usamos THIS para chamarmos o metodo de   referencia */
+	public String msgMaiorIdade() {
+		return this.pessoaMaiorIdade() ? "opa!! voce e maior de idade" : "ix !!! voce e menor de idade";
+	}
 }

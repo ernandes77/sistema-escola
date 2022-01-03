@@ -28,6 +28,15 @@ public class Secretario extends Pessoa {
 	public String toString() {
 		return "Secretario [registro=" + registro + ", nivelCargo=" + nivelCargo + ", experiencia=" + experiencia + "]";
 	}
-	
-	
+	@Override
+	public boolean pessoaMaiorIdade() {
+		
+		return super.pessoaMaiorIdade();
+	}
+	public String msgMaiorIdade() {
+		return this.pessoaMaiorIdade() ? "Opa!!! voce e maior de idade" : "ix!!!voce e menor de idade";
+	}
+
+
+
 }
