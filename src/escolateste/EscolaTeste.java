@@ -8,6 +8,11 @@ import escola.Disciplina;
 public class EscolaTeste {
 
 	public static void main(String[] args) {
+		
+	String loing = JOptionPane.showInputDialog("QUAL O LOING");
+	String senha = JOptionPane.showInputDialog("QUAL A SENHA");
+				
+	if(loing.equalsIgnoreCase("admin")&&senha.equalsIgnoreCase("admin")) {
 	
 String nome = JOptionPane.showInputDialog("QUAL E O SEU NOME : ");
 String idade = JOptionPane.showInputDialog("QUAL E A SUA IDADE : ");
@@ -59,4 +64,5 @@ String nomeEscola = JOptionPane.showInputDialog("NOME DA ESCOLA :");
 	}
 	 
 
+}
 }
