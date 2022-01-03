@@ -9,8 +9,8 @@ public class Aluno extends Pessoa{
 	private String dataMatricula;
 	private String serieMatriculado;
 	private String nomeEscola;
-	
 	public List<Disciplina> disciplinas = new ArrayList<Disciplina>();
+	
 	
 	
 	public List<Disciplina> getDisciplinas() {

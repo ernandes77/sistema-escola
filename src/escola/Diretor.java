@@ -5,6 +5,7 @@ public class Diretor extends Pessoa {
 	public String registroEducacao;
 	public int tempoDirecao;
 	public String titulacao;
+	
 	public String getRegistroEducacao() {
 		return registroEducacao;
 	}
@@ -22,6 +23,11 @@ public class Diretor extends Pessoa {
 	}
 	public void setTitulacao(String titulacao) {
 		this.titulacao = titulacao;
+	}
+	@Override
+	public String toString() {
+		return "Diretor [registroEducacao=" + registroEducacao + ", tempoDirecao=" + tempoDirecao + ", titulacao="
+				+ titulacao + "]";
 	}
 	
 	

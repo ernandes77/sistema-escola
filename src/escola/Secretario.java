@@ -1,6 +1,6 @@
 package escola;
 
-public class Secretario {
+public class Secretario extends Pessoa {
 
 	public String registro;
 	public String nivelCargo;
@@ -23,6 +23,10 @@ public class Secretario {
 	}
 	public void setExperiencia(int experiencia) {
 		this.experiencia = experiencia;
+	}
+	@Override
+	public String toString() {
+		return "Secretario [registro=" + registro + ", nivelCargo=" + nivelCargo + ", experiencia=" + experiencia + "]";
 	}
 	
 	
