@@ -94,6 +94,14 @@ public class Aluno {
 		}
 		return somaNota/disciplinas.size();
 	}
+	
+	public String getAlunoAprovado() {
+		double media = this.getMedia();
+		if(media >=7) {
+			return "Aluno aprovado";
+		}return "Aluno reprovado";
+	}
+	
 	@Override
 	public String toString() {
 		return "Aluno [nome=" + nome + ", idade=" + idade + ", dataNascimento=" + dataNascimento + ", registroGeral="
