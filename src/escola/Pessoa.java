@@ -1,6 +1,6 @@
 package escola;
-
-public class Pessoa {
+/*ABSTRACT QUE sempre fica na classe pai ou super classe */
+public abstract class Pessoa {
 	
 	protected String nome;
 	protected int idade;
@@ -9,6 +9,7 @@ public class Pessoa {
 	protected String numeroCPF;
 	protected String nomePai;
 	protected String nomeMae;
+	
 	public String getNome() {
 		return nome;
 	}
@@ -56,6 +57,7 @@ public class Pessoa {
 		return idade >=18;
 		
 	}
+	public abstract double salario();
 
 
 }

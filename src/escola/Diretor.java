@@ -38,4 +38,9 @@ public class Diretor extends Pessoa {
 	public String msgMaiorIdade() {
 		return this.pessoaMaiorIdade() ? "Opa !!!voce e maior de idade " : "ix!!!voce e menor de idade ";
 	}
+	@Override
+	public double salario() {
+		
+		return 2000;
+	}
 }

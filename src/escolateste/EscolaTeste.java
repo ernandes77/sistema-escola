@@ -4,6 +4,7 @@ import javax.swing.JOptionPane;
 
 import escola.Aluno;
 import escola.Disciplina;
+import escola.Secretario;
 
 public class EscolaTeste {
 
@@ -12,7 +13,11 @@ public class EscolaTeste {
 	String loing = JOptionPane.showInputDialog("QUAL O LOING");
 	String senha = JOptionPane.showInputDialog("QUAL A SENHA");
 				
-	if(loing.equalsIgnoreCase("admin")&&senha.equalsIgnoreCase("admin")) {
+	Secretario secretario = new Secretario();/*DIRETAMENTE COM OBJETO */
+	secretario.setLoing(loing);
+	secretario.setSenha(senha);
+	
+	if(secretario.autenticar()) {
 	
 String nome = JOptionPane.showInputDialog("QUAL E O SEU NOME : ");
 String idade = JOptionPane.showInputDialog("QUAL E A SUA IDADE : ");
@@ -61,8 +66,9 @@ String nomeEscola = JOptionPane.showInputDialog("NOME DA ESCOLA :");
 		System.out.println("Aluno : "+aluno1);/*endereco do objeto */
 		System.out.println("A media do aluno: "+aluno1.getMedia());/*metodo que rotorna media do aluno*/
 		System.out.println("A situacao do aluno  e: "+aluno1.getAlunoAprovado());/*metodo que rotorna resultado do aluno*/
+	}else {
+		JOptionPane.showMessageDialog(null, "Acesso nao permetido");
 	}
-	 
 
 }
 }

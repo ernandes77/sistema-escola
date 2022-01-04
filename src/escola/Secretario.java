@@ -1,11 +1,30 @@
 package escola;
 
-public class Secretario extends Pessoa {
+import escolainterfaces.PermitirAcesso;
+
+public class Secretario extends Pessoa implements PermitirAcesso {
 
 	public String registro;
 	public String nivelCargo;
 	public int experiencia;
 	
+	private String loing;
+	private String senha;
+	
+	
+	
+	public String getLoing() {
+		return loing;
+	}
+	public void setLoing(String loing) {
+		this.loing = loing;
+	}
+	public String getSenha() {
+		return senha;
+	}
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
 	public String getRegistro() {
 		return registro;
 	}
@@ -35,6 +54,16 @@ public class Secretario extends Pessoa {
 	}
 	public String msgMaiorIdade() {
 		return this.pessoaMaiorIdade() ? "Opa!!! voce e maior de idade" : "ix!!!voce e menor de idade";
+	}
+	@Override
+	public double salario() {
+		// TODO Auto-generated method stub
+		return 1200;
+	}
+	@Override
+	public boolean autenticar() {
+		
+		return loing.equals("admin")&& senha.equals("admin");
 	}
 
 

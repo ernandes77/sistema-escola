@@ -24,10 +24,16 @@ public class HerancaTeste {
 		System.out.println("Diretor "+diretor);
 		System.out.println("secretario "+secretario);
 		
-
+		/*chamando metodo  override sobre escrito*/
 		System.out.println("Aluno :" +aluno.pessoaMaiorIdade() +"-"+aluno.msgMaiorIdade());
 		System.out.println("Secretario : " +secretario.pessoaMaiorIdade() +"-"+secretario.msgMaiorIdade());
 		System.out.println("Diretor : " +diretor.pessoaMaiorIdade()+ "-"+diretor.msgMaiorIdade());
+
+		/*chamando metodo abstract */
+		System.out.println("aluno : "+aluno.salario()+" reias");
+		System.out.println("Secretario : "+secretario.salario()+" Reais");
+		System.out.println("Diretor : "+diretor.salario()+" Reais");
+	
 	}
 
 }
