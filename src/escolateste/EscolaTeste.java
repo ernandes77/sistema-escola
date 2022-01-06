@@ -5,6 +5,7 @@ import javax.swing.JOptionPane;
 import escola.Aluno;
 import escola.Disciplina;
 import escola.Secretario;
+import escolainterfaces.PermitirAcesso;
 
 public class EscolaTeste {
 
@@ -13,9 +14,9 @@ public class EscolaTeste {
 	String loing = JOptionPane.showInputDialog("QUAL O LOING");
 	String senha = JOptionPane.showInputDialog("QUAL A SENHA");
 				
-	
+	PermitirAcesso permitirAcesso = new Secretario(loing, senha);
 
-	if(new Secretario().autenticar(loing, senha)) {/*SE TRUE ACESSAR SE FALSE NAO ACESSAR*/
+	if(permitirAcesso.autenticar()) {/*SE TRUE ACESSAR SE FALSE NAO ACESSAR*/
 	
 String nome = JOptionPane.showInputDialog("QUAL E O SEU NOME : ");
 String idade = JOptionPane.showInputDialog("QUAL E A SUA IDADE : ");

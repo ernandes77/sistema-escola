@@ -9,6 +9,29 @@ public class Secretario extends Pessoa implements PermitirAcesso {
 	public int experiencia;
 	
 
+	public String getLoing() {
+		return loing;
+	}
+	public void setLoing(String loing) {
+		this.loing = loing;
+	}
+	public String getSenha() {
+		return senha;
+	}
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
+
+
+	private String loing;
+	private String senha; 
+	
+	public Secretario(String loing , String senha){/*CONSTRUTOR QUE RECEBER LOING E SENHA*/
+		
+	}
+	public Secretario() {/*CONSTRUTOR PADRAO*/
+		
+	}
 	public String getRegistro() {
 		return registro;
 	}
@@ -47,10 +70,19 @@ public class Secretario extends Pessoa implements PermitirAcesso {
 	}
 	@Override
 	public boolean autenticar(String loing, String senha) {
+		this.loing = loing;
+		this.senha = senha;
+		return autenticar();
+		
+	}
+	@Override
+	public boolean autenticar() {
 		// TODO Auto-generated method stub
 		return loing.equals("admin")&&senha.equals("admin");
 	}
 
 
+
+	
 
 }
