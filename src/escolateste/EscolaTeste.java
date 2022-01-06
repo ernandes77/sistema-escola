@@ -13,11 +13,9 @@ public class EscolaTeste {
 	String loing = JOptionPane.showInputDialog("QUAL O LOING");
 	String senha = JOptionPane.showInputDialog("QUAL A SENHA");
 				
-	Secretario secretario = new Secretario();/*DIRETAMENTE COM OBJETO */
-	secretario.setLoing(loing);
-	secretario.setSenha(senha);
 	
-	if(secretario.autenticar()) {
+
+	if(new Secretario().autenticar(loing, senha)) {/*SE TRUE ACESSAR SE FALSE NAO ACESSAR*/
 	
 String nome = JOptionPane.showInputDialog("QUAL E O SEU NOME : ");
 String idade = JOptionPane.showInputDialog("QUAL E A SUA IDADE : ");
