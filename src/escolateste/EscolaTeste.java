@@ -2,6 +2,7 @@ package escolateste;
 
 import javax.swing.JOptionPane;
 
+import classesauxiliares.FuncaAutenticacao;
 import escola.Aluno;
 import escola.Disciplina;
 import escola.Secretario;
@@ -13,10 +14,8 @@ public class EscolaTeste {
 		
 	String loing = JOptionPane.showInputDialog("QUAL O LOING");
 	String senha = JOptionPane.showInputDialog("QUAL A SENHA");
-				
-	PermitirAcesso permitirAcesso = new Secretario(loing, senha);
 
-	if(permitirAcesso.autenticar()) {/*SE TRUE ACESSAR SE FALSE NAO ACESSAR*/
+	if(new FuncaAutenticacao(new Secretario(loing, senha)).autenticar()) {/*vou travar o contrato so acessa quem tiver o acesso*/
 	
 String nome = JOptionPane.showInputDialog("QUAL E O SEU NOME : ");
 String idade = JOptionPane.showInputDialog("QUAL E A SUA IDADE : ");
