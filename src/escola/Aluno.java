@@ -89,7 +89,7 @@ public class Aluno extends Pessoa{
 		return somaNota/disciplinas.size();
 	}
 	
-	public String getAlunoAprovado() {
+	public String getAlunoAprovado() {/*ADICIONANDO METODO RECUPERACAO*/
 		double media = this.getMedia();
 		if(media >=7) {
 			return "Aluno aprovado";
