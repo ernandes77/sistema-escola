@@ -1,5 +1,5 @@
 package classesstatic;
 
-public class Staticas {
+public class StatusAluno {
 
 }
