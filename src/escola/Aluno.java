@@ -91,9 +91,14 @@ public class Aluno extends Pessoa{
 	
 	public String getAlunoAprovado() {/*ADICIONANDO METODO RECUPERACAO*/
 		double media = this.getMedia();
-		if(media >=7) {
+		if(media >=5) {
+			if(media >=7) {
 			return "Aluno aprovado";
-		}return "Aluno reprovado";
+			}
+		
+			return "Aluno recuperacao";
+		}
+		return "Aluno reprovado";
 	}
 	
 	@Override
