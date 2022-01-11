@@ -3,6 +3,8 @@ package escola;
 import java.util.ArrayList;
 import java.util.List;
 
+import classesstatic.StatusAluno;
+
 public class Aluno extends Pessoa{
 
 	
@@ -93,12 +95,12 @@ public class Aluno extends Pessoa{
 		double media = this.getMedia();
 		if(media >=5) {
 			if(media >=7) {
-			return "Aluno aprovado";
+			return StatusAluno.Aprovado;
 			}
 		
-			return "Aluno recuperacao";
+			return StatusAluno.Recuperaco;
 		}
-		return "Aluno reprovado";
+		return StatusAluno.Reprovado;
 	}
 	
 	@Override
