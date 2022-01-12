@@ -1,6 +1,6 @@
 package classesstatic;
 
-public class StatusAluno {
+public class StatusAluno {/*metodo estatico*/
 	
 	public static String Aprovado = "ALUNO APROVADO";
 	public static String Recuperaco = "Aluno recuperacao";
